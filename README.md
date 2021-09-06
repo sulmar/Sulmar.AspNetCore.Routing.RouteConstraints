@@ -51,6 +51,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ### Add Route Constraint
 
+- PESEL
 ~~~ csharp
 // GET api/customers/{number}
 [HttpGet("{number:pesel}")]
@@ -65,6 +66,7 @@ public ActionResult<Customer> GetByPesel(string number)
 }
 ~~~
 
+- REGON
 ~~~ csharp
 // GET api/customers/{number}
 [HttpGet("{number:regon}")]
@@ -79,6 +81,7 @@ public ActionResult<Customer> GetByRegon(string number)
 }
 ~~~
 
+- NIP
 ~~~ csharp
 // GET api/customers/{number}
 [HttpGet("{number:nip}")]
